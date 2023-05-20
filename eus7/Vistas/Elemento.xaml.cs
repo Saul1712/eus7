@@ -41,7 +41,7 @@ namespace eus7.Vistas
 
         public static IEnumerable<Estudiante> Actualizar(SQLiteConnection db, string nombre, string usuario, string contrasena, int id)
         {
-            return db.Query<Estudiante>("UPDATE Estudiante set Nombre = ?, Usuario=?, Contrasena =?, id=?", nombre, usuario,contrasena, id);
+            return db.Query<Estudiante>("UPDATE Estudiante set Nombre = ?, Usuario=?, Contrasena =? where id=?", nombre, usuario,contrasena, id);
         }
         private void btnActualizar_Clicked(object sender, EventArgs e)
         {
