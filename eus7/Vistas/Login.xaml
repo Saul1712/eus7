@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="eus7.Vistas.Login">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="VENTA DE INICIO DE SESESIÓN!" FontSize="18" HorizontalTextAlignment="Center"/>
+        <StackLayout BackgroundColor="#66FFB2">
+            <Label Text="VENTA DE INICIO DE SESESIÓN!" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
             <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario"/>
             <Entry x:Name="txtContrasena" Placeholder="Ingrese la contraseña" IsPassword="True"/>
-            <Button x:Name="btnInicio" Text="INICIAR SESION" Clicked="btnInicio_Clicked"/>
-            <Button x:Name="btnRegistro" Text="Registro" Clicked="btnRegistro_Clicked"/>
+            <Button x:Name="btnInicio" Text="INICIAR SESION" Clicked="btnInicio_Clicked" CornerRadius="15" BackgroundColor="Black" TextColor="White"/>
+            <Button x:Name="btnRegistro" Text="Registro" Clicked="btnRegistro_Clicked" CornerRadius="15" BackgroundColor="Black" TextColor="White"/>
             
         </StackLayout>
     </ContentPage.Content>

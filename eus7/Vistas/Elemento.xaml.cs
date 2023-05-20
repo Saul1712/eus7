@@ -30,7 +30,6 @@ namespace eus7.Vistas
             txtContrasena.Text = contrasena;
             conexion = DependencyService.Get<DataBase>().GetConnection();
             idSeleccionado = id;
-     
             
         }
 
@@ -51,6 +50,7 @@ namespace eus7.Vistas
                 var db = new SQLiteConnection(ruta);
                 RActulizar= Actualizar(db, txtNombre.Text, txtUsuario.Text, txtContrasena.Text, idSeleccionado);
                 Navigation.PushAsync(new ConsultaRegistros());
+                DisplayAlert("Alerta", "Dato Actulizado", "Cerrar");
             }
             catch (Exception ex)
             {
@@ -67,6 +67,7 @@ namespace eus7.Vistas
                 var db = new SQLiteConnection(ruta);
                 REliminar = Eliminar(db, idSeleccionado);
                 Navigation.PushAsync(new ConsultaRegistros());
+                DisplayAlert("Alerta", "Dato Eliminado", "Cerrar");
             }
             catch (Exception ex)
             {

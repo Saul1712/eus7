@@ -3,19 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="eus7.Vistas.ConsultaRegistros">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="LISTA ESTUDIANTES" FontSize="18" HorizontalTextAlignment="Center"/>
+        <StackLayout BackgroundColor="#CCCC00">
+            <Label Text="LISTA ESTUDIANTES" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
             
-            <ListView x:Name="listaEstudiantes" ItemSelected="listaEstudiantes_ItemSelected">
+            <ListView x:Name="listaEstudiantes" ItemSelected="listaEstudiantes_ItemSelected" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Nombre}" Detail="{Binding Usuario}"/>
-                        
+                        <TextCell Text="{Binding Nombre}" Detail="{Binding Usuario}" TextColor="Black" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                    
             </ListView >
-            <Button x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked" />
+            <Button x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked" CornerRadius="15" BackgroundColor="Black" TextColor="White" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

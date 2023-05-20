@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="eus7.Vistas.Elemento">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="ACTUALIZAR - ELIMINAR" FontSize="18" HorizontalTextAlignment="Center" />
+        <StackLayout BackgroundColor="#F6F987">
+            <Label Text="ACTUALIZAR - ELIMINAR" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black" />
             <Entry  x:Name="txtID" Placeholder="ID" IsReadOnly="True"/>
             <Entry x:Name="txtNombre" Placeholder="Nombre" />
             <Entry x:Name="txtUsuario" Placeholder="Usuario" />
@@ -18,8 +18,8 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnActualizar" Text="ACTUALIZAR" Clicked="btnActualizar_Clicked" Grid.Row="0" Grid.Column="0"/>
-                <Button x:Name="btnEliminar" Text="ELIMINAR" Clicked="btnEliminar_Clicked" Grid.Row="0" Grid.Column="1"/>
+                <Button x:Name="btnActualizar" Text="ACTUALIZAR" Clicked="btnActualizar_Clicked" Grid.Row="0" Grid.Column="0" BackgroundColor="Black" TextColor="White" CornerRadius="15"/>
+                <Button x:Name="btnEliminar" Text="ELIMINAR" Clicked="btnEliminar_Clicked" Grid.Row="0" Grid.Column="1" BackgroundColor="Black" TextColor="White" CornerRadius="15"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
